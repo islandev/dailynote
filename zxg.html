@@ -1,0 +1,78 @@
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Mobile Devices Support @begin -->
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title></title>
+<style type="text/css" >
+    body{
+        background-color:#fff;
+    }
+    .box{
+        padding-top:1.5rem;
+        min-height:18.45rem;
+    }
+    .info{
+        margin:auto;
+        font-family: '微软雅黑';
+        margin-top:20px;
+        color:#666;
+        text-align: center;
+	    font-size: 28px;
+    }
+    .errImg{
+        width:12.875rem;
+        height:16.225rem;
+        margin:0 auto 0.8rem auto;
+        background-image: url(//hdg.faisys.com/image/404img.png);
+        background-size: 100% 100%;
+    }
+    .codeImage{
+        text-align:center;
+    }
+    .codeImage img{
+        width: 280px;
+    }
+</style>
+<script type="text/javascript" src="//hdg.faisys.com/js/comm/jquery/jquery-core.min.js?v=201610271901"></script>
+
+</head>
+<body>
+<div class="box">
+    
+        <div class="codeImage">
+            <img id="codeImageuRL"/>
+        </div>
+        <div class="info">请用手机微信扫描二维码</div>
+        
+    
+   
+   
+</div> 
+<script type="text/javascript">
+    var h = window.screen.width - $(window).height();
+    var remBase = Math.min($(window).width(),$(window).height()+h)/16;
+    if(remBase == 0){
+        remBase = '20px';
+    }
+    $('html').css('font-size',remBase);
+    var msg = "http%3A%2F%2Fhd.faisco.cn%2F12108756%2F6%2Fzxg.html";
+    $('#codeImageuRL').attr('src','//hd.faisco.cn/qrCode.jsp?cmd=qrurl&siteUrl='+ msg);
+</script>
+</body>
+</html>
